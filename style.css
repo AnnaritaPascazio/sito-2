@@ -9,7 +9,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   margin: 0;
-  background-color: #121212; /* Aggiunto per contrasto */
+  background-color: #121212;
   color: #eee;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
@@ -113,19 +113,27 @@ p {
   margin: 10px;
 }
 
-.my-input {
+.my-input, .my-textarea {
   display: block;
   width: 45%;
   margin: 10px auto;
   padding: 10px;
   border-radius: 3px;
   border: 1px solid #aaa;
-  color: #eee;
+  color: #54426B;
+  resize: none;
 }
 
 .my-input:focus {
-  background: #d5ffc2;
-  color: #0f8034;
+  background: #E6E6EA;
+  color: #000;
+  outline: none;
+  border: 3px solid #000;
+}
+
+.my-textarea:focus {
+  background: #E6E6EA;
+  color: #000;
   outline: none;
   border: 3px solid #000;
 }
